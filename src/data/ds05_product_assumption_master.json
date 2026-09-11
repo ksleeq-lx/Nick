@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "version": "1.0",
+    "base_date": "2026-08-27",
+    "seed": 20260827,
+    "default_fx_krw_per_usd": 1350,
+    "period_unit": "월",
+    "note": "제품별 사업 가정 마스터",
+    "scenarios": [
+      {
+        "scenario_id": "BASE",
+        "scenario_name": "기준안",
+        "volume_delta_pct": 0,
+        "price_delta_pct": 0,
+        "var_cost_delta_pct": 0
+      },
+      {
+        "scenario_id": "UP",
+        "scenario_name": "상향안",
+        "volume_delta_pct": 10,
+        "price_delta_pct": 5,
+        "var_cost_delta_pct": -3
+      },
+      {
+        "scenario_id": "DOWN",
+        "scenario_name": "하향안",
+        "volume_delta_pct": -10,
+        "price_delta_pct": -5,
+        "var_cost_delta_pct": 3
+      }
+    ]
+  },
+  "products": [
+    {
+      "product_id": "P-01",
+      "product_name": "범용 MMA 모노머",
+      "application": "도장 및 코팅 기초원료",
+      "market": "내수",
+      "currency": "KRW",
+      "list_price": 2100,
+      "var_cost_per_kg": 1600,
+      "fixed_cost_month": 348000000,
+      "base_volume_ton": 1200,
+      "capacity_ton": 1500,
+      "target_op_margin_pct": 10.0,
+      "remark": "이익률 = 목표 경계 → 정상"
+    },
+    {
+      "product_id": "P-02",
+      "product_name": "자동차 램프용 내열 컴파운드",
+      "application": "자동차 외장 및 램프 하우징",
+      "market": "내수",
+      "currency": "KRW",
+      "list_price": 3400,
+      "var_cost_per_kg": 2700,
+      "fixed_cost_month": 300000000,
+      "base_volume_ton": 800,
+      "capacity_ton": 900,
+      "target_op_margin_pct": 12.0,
+      "remark": "기준안 목표 미달"
+    },
+    {
+      "product_id": "P-03",
+      "product_name": "도광판용 광학 그레이드",
+      "application": "디스플레이 BLU 도광판",
+      "market": "수출",
+      "currency": "USD",
+      "list_price": 2.35,
+      "var_cost_per_kg": 1900,
+      "fixed_cost_month": 500000000,
+      "base_volume_ton": 1500,
+      "capacity_ton": 2000,
+      "target_op_margin_pct": 15.0,
+      "remark": "수출 주력 품목"
+    },
+    {
+      "product_id": "P-04",
+      "product_name": "고내후 옥외 간판 그레이드",
+      "application": "옥외 광고판 및 건축 자재",
+      "market": "수출",
+      "currency": "USD",
+      "list_price": 2.10,
+      "var_cost_per_kg": 2350,
+      "fixed_cost_month": null,
+      "base_volume_ton": 600,
+      "capacity_ton": 800,
+      "target_op_margin_pct": 12.0,
+      "remark": "고정비 미확정 → 영업이익·BEP 미산출"
+    },
+    {
+      "product_id": "P-05",
+      "product_name": "고유동 박막 그레이드",
+      "application": "모바일 기기 내장재",
+      "market": "내수",
+      "currency": "KRW",
+      "list_price": 3050,
+      "var_cost_per_kg": 2300,
+      "fixed_cost_month": 700000000,
+      "base_volume_ton": 950,
+      "capacity_ton": 950,
+      "target_op_margin_pct": 8.0,
+      "remark": "판매량=능력 경계. 기준안 목표 미달, 상향안 능력 초과, 하향안 BEP 불가"
+    },
+    {
+      "product_id": "P-06",
+      "product_name": "SMMA 투명 내충격 그레이드",
+      "application": "가전 제품 외관 하우징",
+      "market": "수출",
+      "currency": "USD",
+      "list_price": 2.55,
+      "var_cost_per_kg": 2150,
+      "fixed_cost_month": 380000000,
+      "base_volume_ton": 1000,
+      "capacity_ton": 1300,
+      "target_op_margin_pct": 15.0,
+      "remark": "안정적 수익 품목"
+    }
+  ]
+}
